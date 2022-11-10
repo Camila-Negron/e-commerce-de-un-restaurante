@@ -19,21 +19,10 @@
     <link rel="stylesheet" href="https://megaone.acrothemes.com/vendor/css/owl.carousel.min.css">
     <link rel="stylesheet" href="https://megaone.acrothemes.com/vendor/css/swiper.min.css">
     <link rel="stylesheet" href="https://megaone.acrothemes.com/vendor/css/cubeportfolio.min.css">
-    <!-- <link rel="stylesheet" href="https://megaone.acrothemes.com/vendor/css/LineIcons.min.css"> -->
-    <!-- <link rel="stylesheet" href="../vendor/css/revolution-settings.min.css">
-    <link rel="stylesheet" href="../vendor/css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="../vendor/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../vendor/css/swiper.min.css">
-    <link rel="stylesheet" href="../vendor/css/cubeportfolio.min.css"> -->
-
     <!-- Style Sheet -->
     <link rel="stylesheet" href="https://megaone.acrothemes.com/vendor/css/select2.min.css">
     <link rel="stylesheet" href="https://megaone.acrothemes.com/vendor/css/jquery-ui.bundle.css">
     <link rel="stylesheet" href="https://megaone.acrothemes.com/restaurant/css/style.css">
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
-    <!-- <link rel="stylesheet" href="../vendor/css/select2.min.css">
-    <link rel="stylesheet" href="../vendor/css/jquery-ui.bundle.css">
-    <link rel="stylesheet" href="css/style.css"> -->
     <!--iconos-->
     <script src="https://kit.fontawesome.com/d2559a3800.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/0e79ddbc3a.js" crossorigin="anonymous"></script>
@@ -60,29 +49,22 @@
     <nav class="navbar navbar-top-default nav-radius navbar-expand-lg">
         <div class="container">
             <a href="../frontend-restaurante/RestaurantePrincipal.html" title="Logo" class="logo">
-            <!-- <a href="javascript:void(0)" title="Logo" class="logo scroll"> -->
+            <a href="javascript:void(0)" title="Logo" class="logo scroll">
                 <!--Logo Default-->
                 <img src="https://megaone.acrothemes.com/restaurant/img/logo.png" alt="logo" class="logo-dark logo-default">
                 <img src="https://megaone.acrothemes.com/restaurant/img/logo2.png" alt="logo" class="logo-light logo-scrolled">
             </a>
-    <!-- <nav class="navbar navbar-top-default nav-radius navbar-expand-lg">
-        <div class="container">
-            <a href="../frontend-restaurante/RestaurantePrincipal.html" title="Logo" class="logo">
-                
-                <img src="img/logo.png" alt="logo" class="logo-dark logo-default">
-                <img src="img/logo2.png" alt="logo" class="logo-light logo-scrolled">
-            </a> -->
 
             <!--Nav Links-->
             <div class="collapse navbar-collapse">
                 <div class="navbar-nav ml-auto">
-                    <a class="nav-link" href="../frontend-restaurante/RestaurantePrincipal.html#home">Home</a>
-                    <a class="nav-link" href="../frontend-restaurante/RestaurantePrincipal.html#aboutus">Sobre Nosotros</a>
+                    <a class="nav-link" href="../frontend-restaurante/RestaurantePrincipal.html#home">Inicio</a>
+                    <a class="nav-link" href="../frontend-restaurante/RestaurantePrincipal.html#about">Sobre Nosotros</a>
                     <a class="nav-link" href="../frontend-restaurante/RestaurantePrincipal.html#reservation">Reservaciones</a>
                     <a class="nav-link" href="../frontend-restaurante/RestaurantePrincipal.html#ourmenu">Nuestro Menu</a>
-                    <a class="nav-link active">Nuestro Blog</a>
+                    <a class="nav-link" href="../frontend-restaurante/RestaurantePrincipal.html#ourblog">Nuestro Blog</a>
                     <a class="nav-link" href="../frontend-restaurante/RestaurantePrincipal.html#contactus">Contactos</a>
-                    <a class="nav-link" href="login.html">Iniciar Sesión</a>
+                    <a class="nav-link active" href="#login">Iniciar Sesión</a>
                 </div>
                     <div> <span class="open_search"><i class="fas fa-search"></i> </span></div>
 
@@ -114,10 +96,8 @@
                     </div>
                 </div>
             </a>
-
     </nav>
 
-    <!--Side Nav-->
     <div class="side-menu">
         <div class="inner-wrapper">
             <span class="btn-close link" id="btn_sideNavClose"></span>
@@ -136,13 +116,10 @@
                         <a class="nav-link" href="../frontend-restaurante/RestaurantePrincipal.html#ourmenu">Nuestro Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../RestaurantePrincipal.html#contactus">Contactos</a>
+                        <a class="nav-link" href="../frontend-restaurante/RestaurantePrincipal.html#ourblog">Nuestro Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html#login">Iniciar Sesión</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html#signup">Registrarse</a>
+                        <a class="nav-link" href="../frontend-restaurante/RestaurantePrincipal.html#contactus">Contactos</a>
                     </li>
                 </ul>
             </nav>
@@ -164,131 +141,116 @@
 
 </header>
 <!--Header end-->
-
-<section id="ourblog" class="blog-banner">
-    <div class="container text-center text-md-right">
-
-        <p class="font-weight-normal"><a class="text-white" href="../frontend-restaurante/RestaurantePrincipal.html#home">Home</a> / <span class="main-color">Blog</span></p>
-
-        <h1>Our Blog</h1>
-        <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit <br> vestibulum auctor nunc vitae diam eleifend.</p>
-
-    </div>
+<section class="blog-banner"></section>
+<style>
+    body {font-family: Roboto;background-color: transparent;}
+    form {border:transparent;}
+    
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      background-color: #84b813;
+    }
+    
+    button {
+      background-color: #04AA6D;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    button:hover {
+      opacity: 0.8;
+    }
+    
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+    
+    .container {
+      padding: 16px;
+    }
+    
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+    
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+      span.psw {
+         display: block;
+         float: none;
+      }
+      .cancelbtn {
+         width: 100%;
+      }
+    }
+    </style>
+    </head>
+    <body>
+<section id="login" class="bg-grey">
+    <h1 style="text-align:center;font-family: Roboto;">Iniciar Sesión</h1>
+    <form action="/action_page.php" method="post">
+      <div class="container">
+        <label for="uname"><b>Nombre de Usuario o Correo:</b></label>
+        <input type="text" placeholder="Ingrese su Nombre de Usuario o Correo" name="uname" required>
+    
+        <label for="psw"><b>Contraseña:</b></label>
+        <input type="password" placeholder="Ingrese su Contraseña" name="psw" required>
+            
+        <button type="submit">Iniciar Sesión</button>
+        
+      </div>
+    
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">No tiene cuenta? <a href="#signup">Crear una cuenta</a></span>
+      </div>
+    </form>
 </section>
 
-<section class="bg-grey">
-    <div class="container">
-        <div class="row mb-4">
-            <div class="col-md-4">
-                <div class="blog-panel">
-                    <p class="mb-3">Feb 23, 2020 / <span><a href="blog-left.html"> Breakfast</a></span></p>
-                    <h5>Fresh & Organic</h5>
-                    <div class="panel-img"><img src="img/blog-image1.jpg" alt="img"></div>
-                    <p>The third Monday of January is supposed to be a depressing day of the year.
-                        Whether you believe that or not, the long nights, cold weather and trying to keep to new.</p>
-                    <div class="img-link"><img src="img/testimonial-1.png" alt="img"><span class="name-link">by: <span><a href="blog-left.html">Lisa Williams</a></span> </span> </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="blog-panel">
-                    <p class="mb-3">Feb 23, 2020 / <span><a href="blog-left.html"> Lunch</a></span></p>
-                    <h5>Full of Spices & Taste</h5>
-                    <div class="panel-img"><img src="img/blog-image2.jpg" alt="img"></div>
-                    <p>The third Monday of January is supposed to be a depressing day of the year.
-                        Whether you believe that or not, the long nights, cold weather and trying to keep to new.</p>
-                    <div class="img-link"><img src="img/testimonial-1.png" alt="img"><span class="name-link">by: <span><a href="blog-left.html">Lisa Williams</a></span> </span> </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="blog-panel">
-                    <p class="mb-3">Feb 23, 2020 / <span><a href="blog-left.html"> Dinner</a></span></p>
-                        <h5>Midnight Deals</h5>
-                    <div class="panel-img"><img src="img/blog-image3.jpg" alt="img"></div>
-                    <p>The third Monday of January is supposed to be a depressing day of the year.
-                        Whether you believe that or not, the long nights, cold weather and trying to keep to new.</p>
-                    <div class="img-link"><img src="img/testimonial-1.png" alt="img"><span class="name-link">by: <span><a href="blog-left.html">Lisa Williams</a></span> </span> </div>
-                </div>
-            </div>
+<section id="signup" class="bg-grey">
+    <h2 style="text-align:center;font-family:Roboto;">Registrarse</h2>
+    <form action="/action_page.php" method="post">
+        <div class="container">
+          <label for="mail"><b>Correo:</b></label>
+          <input type="text" placeholder="Ingrese su Correo" name="uname" required>
+
+          <label for="nomb"><b>Nombre:</b></label>
+          <input type="text" placeholder="Ingrese su Nombre" name="psw" required>
+
+          <label for="apell"><b>Apellido:</b></label>
+          <input type="text" placeholder="Ingrese su Apellido" name="psw" required>
+      
+          <label for="uname"><b>Nombre de Usuario:</b></label>
+          <input type="text" placeholder="Ingrese su Nombre de Usuario" name="psw" required>
+
+          <label for="psw"><b>Contraseña:</b></label>
+          <input type="password" placeholder="Ingrese su Contraseña" name="psw" required>
+
+          <label for="verpsw"><b>Confirmar Contraseña:</b></label>
+          <input type="password" placeholder="Repita su Contraseña" name="psw" required>
+              
+          <button type="submit">Crear Cuenta</button>
+          
         </div>
-
-        <div class="row mb-4">
-            <div class="col-md-4">
-                <div class="blog-panel">
-                    <p class="mb-3">Feb 23, 2020 / <span><a href="blog-left.html"> Dinner</a></span></p>
-                    <h5>Midnight Deals</h5>
-                    <div class="panel-img"><img src="img/blog-image4.jpg" alt="img"></div>
-                    <p>The third Monday of January is supposed to be a depressing day of the year.
-                        Whether you believe that or not, the long nights, cold weather and trying to keep to new.</p>
-                    <div class="img-link"><img src="img/testimonial-1.png" alt="img"><span class="name-link">by: <span><a href="blog-left.html">Lisa Williams</a></span> </span> </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="blog-panel">
-                    <p class="mb-3">Feb 23, 2020 / <span><a href="blog-left.html"> Lunch</a></span></p>
-                    <h5>Full of Spices & Taste</h5>
-                    <div class="panel-img"><img src="img/blog-image5.jpg" alt="img"></div>
-                    <p>The third Monday of January is supposed to be a depressing day of the year.
-                        Whether you believe that or not, the long nights, cold weather and trying to keep to new.</p>
-                    <div class="img-link"><img src="img/testimonial-1.png" alt="img"><span class="name-link">by: <span><a href="blog-left.html">Lisa Williams</a></span> </span> </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="blog-panel">
-                    <p class="mb-3">Feb 23, 2020 / <span><a href="blog-left.html"> Breakfast</a></span></p>
-                    <h5>Fresh & Organic</h5>
-                    <div class="panel-img"><img src="img/blog-image6.jpg" alt="img"></div>
-                    <p>The third Monday of January is supposed to be a depressing day of the year.
-                        Whether you believe that or not, the long nights, cold weather and trying to keep to new.</p>
-                    <div class="img-link"><img src="img/testimonial-1.png" alt="img"><span class="name-link">by: <span><a href="blog-left.html">Lisa Williams</a></span> </span> </div>
-                </div>
-            </div>
+      
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <span class="psw">Ya tiene una cuenta? <a href="#login">Iniciar Sesión</a></span>
         </div>
-
-        <div class="row mb-4">
-            <div class="col-md-4">
-                <div class="blog-panel">
-                    <p class="mb-3">Feb 23, 2020 / <span><a href="blog-left.html"> Lunch</a></span></p>
-                    <h5>Full of Spices & Taste</h5>
-                    <div class="panel-img"><img src="img/blog-image3.jpg" alt="img"></div>
-                    <p>The third Monday of January is supposed to be a depressing day of the year.
-                        Whether you believe that or not, the long nights, cold weather and trying to keep to new.</p>
-                    <div class="img-link"><img src="img/testimonial-1.png" alt="img"><span class="name-link">by: <span><a href="blog-left.html">Lisa Williams</a></span> </span> </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="blog-panel">
-                    <p class="mb-3">Feb 23, 2020 / <span><a href="blog-left.html"> Breakfast</a></span></p>
-                    <h5>Fresh & Organic</h5>
-                    <div class="panel-img"><img src="img/blog-image1.jpg" alt="img"></div>
-                    <p>The third Monday of January is supposed to be a depressing day of the year.
-                        Whether you believe that or not, the long nights, cold weather and trying to keep to new.</p>
-                    <div class="img-link"><img src="img/testimonial-1.png" alt="img"><span class="name-link">by: <span><a href="blog-left.html">Lisa Williams</a></span> </span> </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="blog-panel">
-                    <p class="mb-3">Feb 23, 2020 / <span><a href="../RestaurantePrincipal.html"> Dinner</a></span></p>
-                    <h5>Midnight Deals</h5>
-                    <div class="panel-img"><img src="img/blog-image2.jpg" alt="img"></div>
-                    <p>The third Monday of January is supposed to be a depressing day of the year.
-                        Whether you believe that or not, the long nights, cold weather and trying to keep to new.</p>
-                    <div class="img-link"><img src="img/testimonial-1.png" alt="img"><span class="name-link">by: <span><a href="blog-left.html">Lisa Williams</a></span> </span> </div>
-                </div>
-            </div>
-        </div>
-
-        <nav class="pagination blog-post-navigation" aria-label="Posts navigation">
-            <a class="next page-link mr-3" href="#"><i class="fa fa-arrow-left"></i></a>
-            <span aria-current="page" class="page-link current mr-3">1</span>
-            <span aria-current="page" class="page-link mr-3">2</span>
-            <a class="next page-link " href="#"><i class="fa fa-arrow-right"></i></a>
-        </nav>
-
-    </div>
-
-
+      </form>
 </section>
-
 
 
 
