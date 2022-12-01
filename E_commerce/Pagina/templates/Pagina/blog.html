@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Page Title -->
+    <title>Blog Noticias</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://megaone.acrothemes.com/restaurant/img/favicon.ico">
+    <!-- Bundle -->
+    <link rel="stylesheet" href="https://megaone.acrothemes.com/vendor/css/bundle.min.css">
+    <!-- Plugin Css -->
+    <link rel="stylesheet" href="https://megaone.acrothemes.com/vendor/css/revolution-settings.min.css">
+    <link rel="stylesheet" href="https://megaone.acrothemes.com/vendor/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://megaone.acrothemes.com/vendor/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://megaone.acrothemes.com/vendor/css/swiper.min.css">
+    <link rel="stylesheet" href="https://megaone.acrothemes.com/vendor/css/cubeportfolio.min.css">
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="https://megaone.acrothemes.com/vendor/css/select2.min.css">
+    <link rel="stylesheet" href="https://megaone.acrothemes.com/vendor/css/jquery-ui.bundle.css">
+    <link rel="stylesheet" href="https://megaone.acrothemes.com/restaurant/css/style.css">
+
+    <!--iconos-->
+    <script src="https://kit.fontawesome.com/d2559a3800.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0e79ddbc3a.js" crossorigin="anonymous"></script>
+
+     
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="90" class="position-relative">
+
+<!--Preloader-->
+
+<div class="loader" id="loader-fade" style="display: none;">
+    <div class="loader-wrapper">
+        <!-- <img src="img/loader.png" alt="image"> -->
+        <img src="https://megaone.acrothemes.com/restaurant/img/loader.png" alt="image">
+    </div>
+</div>
+<!--End Preloader-->
+
+
+<!--Header Start-->
+<header class="cursor-light">
+
+    <!--Navigation-->
+    <nav class="navbar navbar-top-default nav-radius navbar-expand-lg">
+        <div class="container">
+            <a href="{% url 'Home' %}" title="Logo" class="logo">
+            <!-- <a href="javascript:void(0)" title="Logo" class="logo scroll"> -->
+                <!--Logo Default-->
+                <img src="https://megaone.acrothemes.com/restaurant/img/logo.png" alt="logo" class="logo-dark logo-default">
+                <img src="https://megaone.acrothemes.com/restaurant/img/logo2.png" alt="logo" class="logo-light logo-scrolled">
+            </a>
+    <!-- <nav class="navbar navbar-top-default nav-radius navbar-expand-lg">
+        <div class="container">
+            <a href="../frontend-restaurante/RestaurantePrincipal.html" title="Logo" class="logo">
+                
+                <img src="img/logo.png" alt="logo" class="logo-dark logo-default">
+                <img src="img/logo2.png" alt="logo" class="logo-light logo-scrolled">
+            </a> -->
+
+            <!--Nav Links-->
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="{% url 'Home' %}">Inicio</a>
+                    <a class="nav-link" href="{% url 'Home' %}">Reservaciones</a>
+                    <a class="nav-link" href="{% url 'Home' %}">Nuestro Menu</a>
+                    <a class="nav-link active">Nuestro Blog</a>
+                    <a class="nav-link" href="{% url 'Home' %}">Contactos</a>
+                    <!-- <a class="nav-link" href="login.html">Iniciar Sesión</a> -->
+                </div>
+                    <div> <span class="open_search"><i class="fas fa-search"></i> </span></div>
+
+                    <div class="search_block">
+                        <div class="search_box animated wow fadeInUp">
+                            <div class="inner">
+                                <input type="text" name="search" id="search" class="search_input" autocomplete="off" placeholder="Enter Your Keywords.." />
+
+                                <i class="fas fa-search" style="color:#fff;font-size:30px;"></i> </button>
+
+                            </div>
+                        </div>
+                        <div class="search-overlay"></div>
+
+                    </div>
+
+                    <!-- search input-->
+                </div>
+
+            </div>
+
+            <!--Side Menu Button-->
+            <a href="javascript:void(0)" class="parallax-btn sidemenu_btn" id="sidemenu_toggle">
+                <div class="animated-wrap sidemenu_btn_inner">
+                    <div class="animated-element">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </a>
+
+    </nav>
+
+    <!--Side Nav-->
+    <div class="side-menu">
+        <div class="inner-wrapper">
+            <span class="btn-close link" id="btn_sideNavClose"></span>
+            <nav class="side-nav w-100">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'Home' %}">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'Home' %}">Reservaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'Home' %}">Nuestro Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'Home' %}">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'Login' %}">Iniciar Sesión</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="side-footer text-white w-100">
+                <ul class="social-icons-simple">
+                    <li class="animated-wrap"><a class="animated-element" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
+                    <li class="animated-wrap"><a class="animated-element" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
+                    <li class="animated-wrap"><a class="animated-element" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
+                </ul>
+                <p class="text-white">&copy; 2022 Mr.Chef. Hecho por Grupo 4</p>
+            </div>
+        </div>
+    </div>
+    <a id="close_side_menu" href="javascript:void(0);"></a>
+    <!-- End side menu -->
+
+
+
+</header>
+<!--Header end-->
+
+<section id="ourblog" class="blog-banner">
+    <div class="container text-center text-md-right">
+
+        <p class="font-weight-normal"><a class="text-white" href="{% url 'Home' %}">Inicio</a> / <span class="main-color">Blog</span></p>
+
+        <h1>Nuestro Blog</h1>
+        <p>Enterate de nuestras ultimas noticias mediante nuestro blog.</p>
+
+    </div>
+</section>
+
+<section class="bg-grey">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <div class="blog-panel">
+                    <p class="mb-3">Feb 14, 2022 / <span><a href="{% url 'BlogLeft' %}"> Cenas</a></span></p>
+                    <h5>Día de los Enamorados</h5>
+                    <div class="panel-img"><img src="https://megaone.acrothemes.com/restaurant/img/blog-image1.jpg" alt="img"></div>
+                    <p>Solo por el 14 de febrero, tendremos una diversa seleccion de paquetes para ti y tu pareja en cenas romanticas.
+                        Cada paquete cuenta con una cena a eleccion acompañadas de la decoración que tu prefieras, tambien ofrecemos servicios adicionales segun el paquete.
+                    </p>
+                    <div class="img-link"><img src="https://megaone.acrothemes.com/restaurant/img/testimonial-1.png" alt="img"><span class="name-link">Por: <span><a href="{% url 'BlogLeft' %}">Alvaro Jurado</a></span> </span> </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="blog-panel">
+                    <p class="mb-3">Dic 19, 2022 / <span><a href="{% url 'BlogLeft' %}"> Cenas</a></span></p>
+                    <h5>Ofertas Navideñas</h5>
+                    <div class="panel-img"><img src="https://megaone.acrothemes.com/restaurant/img/blog-image2.jpg" alt="img"></div>
+                    <p>La navidad se encuentra a la vuelta de la esquina, por eso queremos ofrecerte los mejores platos para esa cena familiar.
+                        Contamos con clasicos como la tradicional picana, pavo al horno, pastas y mariscos. Solo por la semana de navidad tambien te ofrecemos descuentos de hasta el 25%.
+                    </p>
+                    <div class="img-link"><img src="https://megaone.acrothemes.com/restaurant/img/testimonial-1.png" alt="img"><span class="name-link">Por: <span><a href="{% url 'BlogLeft' %}">Alvaro Jurado</a></span> </span> </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="blog-panel">
+                    <p class="mb-3">May 27, 2022 / <span><a href="{% url 'BlogLeft' %}"> Almuerzos</a></span></p>
+                        <h5>Especiales Día de la Madre</h5>
+                    <div class="panel-img"><img src="https://megaone.acrothemes.com/restaurant/img/blog-image3.jpg" alt="img"></div>
+                    <p>Porque mamá se lo merece, presentamos nuestro buffet especial para festejar el día de la madre.
+                         Reserva tu mesa y disfruta de nuestro evento especial. </p>
+                    <div class="img-link"><img src="https://megaone.acrothemes.com/restaurant/img/testimonial-1.png" alt="img"><span class="name-link">Por: <span><a href="{% url 'BlogLeft' %}">Camila Negrón</a></span> </span> </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <div class="blog-panel">
+                    <p class="mb-3">Sep 21, 2022 / <span><a href="{% url 'BlogLeft' %}"> Desayunos</a></span></p>
+                    <h5>Día del Estudiante</h5>
+                    <div class="panel-img"><img src="https://megaone.acrothemes.com/restaurant/img/blog-image4.jpg" alt="img"></div>
+                    <p>Por la primavera y los estudiantes, este 21 de septiembre si eres estudiantes cuentas con descuentos en desayunos y postres.
+                        Además por el comienzo de la primavera te ofrecemos una seleccion exclusiva por tiempo limitado en batidos de frutas.
+                    </p>
+                    <div class="img-link"><img src="https://megaone.acrothemes.com/restaurant/img/testimonial-1.png" alt="img"><span class="name-link">Por: <span><a href="{% url 'BlogLeft' %}">Ignacio Tapia</a></span> </span> </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="blog-panel">
+                    <p class="mb-3">Dic 30, 2022 / <span><a href="{% url 'BlogLeft' %}"> Cenas</a></span></p>
+                    <h5>Evento de Fin de Año</h5>
+                    <div class="panel-img"><img src="https://megaone.acrothemes.com/restaurant/img/blog-image5.jpg" alt="img"></div>
+                    <p>Reserva ahora para tener mesa disponible para nuestra cena de fin de año, sera un evento para toda la familia. 
+                        Contaremos con musica en vivo y un buffet para todos los gustos.</p>
+                    <div class="img-link"><img src="https://megaone.acrothemes.com/restaurant/img/testimonial-1.png" alt="img"><span class="name-link">Por: <span><a href="{% url 'BlogLeft' %}">Eduardo Apaza</a></span> </span> </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="blog-panel">
+                    <p class="mb-3">Ago 6, 2022 / <span><a href="{% url 'BlogLeft' %}"> Almuerzos</a></span></p>
+                    <h5>Día de Bolivia</h5>
+                    <div class="panel-img"><img src="https://megaone.acrothemes.com/restaurant/img/blog-image6.jpg" alt="img"></div>
+                    <p>En honor al día de la independencia, ofrecemos toda la comida nacional que puedas querer. Solo por hoy nuestros platos nacionales tendran descuentos de hasta el 50%.
+                        Además de contar con música nacional en vivo y una jarra de jugo gratis con tu pedido (Mocochinchi, Chicha Morada, entre otras bebidas nacionales).
+                    </p>
+                    <div class="img-link"><img src="https://megaone.acrothemes.com/restaurant/img/testimonial-1.png" alt="img"><span class="name-link">Por: <span><a href="{% url 'BlogLeft' %}">Camila Negrón</a></span> </span> </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <div class="blog-panel">
+                    <p class="mb-3">Feb 28, 2022 / <span><a href="{% url 'BlogLeft' %}"> Almuerzos</a></span></p>
+                    <h5>Feliz Carnaval</h5>
+                    <div class="panel-img"><img src="https://megaone.acrothemes.com/restaurant/img/blog-image3.jpg" alt="img"></div>
+                    <p>Celebrando carnavales, nuestros jugos y helados con descuentos.
+                         Además con la reserva de una mesa te regalamos una jarra de jugo de frutas gratis, ven a festejar el carnaval con nosotros.</p>
+                    <div class="img-link"><img src="https://megaone.acrothemes.com/restaurant/img/testimonial-1.png" alt="img"><span class="name-link">Por: <span><a href="{% url 'BlogLeft' %}">Ignacio Tapia</a></span> </span> </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="blog-panel">
+                    <p class="mb-3">Nov 10, 2022 / <span><a href="{% url 'BlogLeft' %}"> Desayunos</a></span></p>
+                    <h5>Día de la Salteña</h5>
+                    <div class="panel-img"><img src="https://megaone.acrothemes.com/restaurant/img/blog-image1.jpg" alt="img"></div>
+                    <p>Solo por hoy, ven y prueba nuestras sabrosas salteñas con una gaseosa personal de regalo.
+                         Tenemos diversos sabores desde la clasica salteña de carne y pollo hasta salteñas de fricase y hoja. </p>
+                    <div class="img-link"><img src="https://megaone.acrothemes.com/restaurant/img/testimonial-1.png" alt="img"><span class="name-link">Por: <span><a href="{% url 'BlogLeft' %}">Eduardo Apaza</a></span> </span> </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="blog-panel">
+                    <p class="mb-3">Ene 24, 2022 / <span><a href="{% url 'BlogLeft' %}"> Desayunos</a></span></p>
+                    <h5>Fiesta del Ekeko</h5>
+                    <div class="panel-img"><img src="https://megaone.acrothemes.com/restaurant/img/blog-image2.jpg" alt="img"></div>
+                    <p>En honor al dios de la abundancia, ven a desayunar con nosotros. Durante el día 24 contaremos con desayunos buffet y una amplia variedad de jugos y batidos usando frutas de temporada.
+                        Por si fuera poco tambien tendremos una variedad de desayunos tipicos del país, todo para que empieces tu día de la mejor manera.
+                    </p>
+                    <div class="img-link"><img src="https://megaone.acrothemes.com/restaurant/img/testimonial-1.png" alt="img"><span class="name-link">Por: <span><a href="{% url 'BlogLeft' %}">Alvaro Jurado</a></span> </span> </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="pagination blog-post-navigation" aria-label="Posts navigation">
+            <a class="next page-link mr-3" href="#"><i class="fa fa-arrow-left"></i></a>
+            <span aria-current="page" class="page-link current mr-3">1</span>
+            <span aria-current="page" class="page-link mr-3">2</span>
+            <a class="next page-link " href="#"><i class="fa fa-arrow-right"></i></a>
+        </nav>
+
+    </div>
+
+
+</section>
+
+
+
+
+<!--Footer Start-->
+<section class="text-center footer-sec">
+    <h2 class="d-none">hidden</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-social">
+                    <ul class="list-unstyled text-white">
+                        <li><a class="wow fadeInUp facebook-bg-hvr" href="javascript:void(0);"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a class="wow fadeInDown twitter-bg-hvr" href="javascript:void(0);"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a class="wow fadeInUp google-bg-hvr" href="javascript:void(0);"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
+                        <li><a class="wow fadeInDown linkedin-bg-hvr" href="javascript:void(0);"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                        <li><a class="wow fadeInUp instagram-bg-hvr" href="javascript:void(0);"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <p class="company-about fadeIn theme-dark text-capitalize">© 2022 Mr.Chef. Hecho por <a class="theme-dark" href="javascript:void(0);">Grupo 4</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Footer End-->
+
+<!--G0 Top-->
+<div class="go-top"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-up"></i></div>
+<!--End Go Top-->
+
+
+<!-- JavaScript -->
+<script src="https://megaone.acrothemes.com/vendor/js/bundle.min.js"></script>
+
+<!-- Plugin Js -->
+<script src="https://megaone.acrothemes.com/vendor/js/jquery.fancybox.min.js"></script>
+<script src="https://megaone.acrothemes.com/vendor/js/owl.carousel.min.js"></script>
+<script src="https://megaone.acrothemes.com/vendor/js/swiper.min.js"></script>
+<script src="https://megaone.acrothemes.com/vendor/js/jquery.cubeportfolio.min.js"></script>
+<script src="https://megaone.acrothemes.com/vendor/js/jquery.appear.js"></script>
+<script src="https://megaone.acrothemes.com/vendor/js/hover-item.js"></script>
+<script src="https://megaone.acrothemes.com/vendor/js/isotope.pkgd.min.js"></script>
+<!-- REVOLUTION JS FILES -->
+<script src="https://megaone.acrothemes.com/vendor/js/jquery.themepunch.tools.min.js"></script>
+<script src="https://megaone.acrothemes.com/vendor/js/jquery.themepunch.revolution.min.js"></script>
+<!-- SLIDER REVOLUTION EXTENSIONS -->
+<script src="https://megaone.acrothemes.com/vendor/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="https://megaone.acrothemes.com/vendor/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="https://megaone.acrothemes.com/vendor/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="https://megaone.acrothemes.com/vendor/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="https://megaone.acrothemes.com/vendor/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="https://megaone.acrothemes.com/vendor/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="https://megaone.acrothemes.com/vendor/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="https://megaone.acrothemes.com/vendor/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="https://megaone.acrothemes.com/vendor/js/extensions/revolution.extension.video.min.js"></script>
+<script src="https://megaone.acrothemes.com/vendor/js/parallaxie.min.js"></script>
+
+<!-- custom script -->
+<script src="https://megaone.acrothemes.com/vendor/js/select2.min.js"></script>
+<script src="https://megaone.acrothemes.com/vendor/js/jquery.hoverdir.js"></script>
+<script src="https://megaone.acrothemes.com/vendor/js/jquery-ui.bundle.js"></script>
+<script src="https://megaone.acrothemes.com/vendor/js/flip.js"></script>
+
+<!--contact form-->
+<script src="https://megaone.acrothemes.com/vendor/js/contact_us.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4fusEY9kSwNHgtK8KOgyoTsyP5Tb2NXo"></script>
+<script src="https://megaone.acrothemes.com/restaurant/js/map.js"></script>
+<script src="https://megaone.acrothemes.com/restaurant/js/script.js"></script>
+
+
+</body>
+</html>

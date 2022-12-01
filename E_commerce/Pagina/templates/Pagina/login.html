@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    {% load static %}
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'Pagina/styles/forms.css' %}" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form method="post" id="signin" class="sign-in-form">
+            {% csrf_token %}
+            <h2 class="title">Inicia sesión</h2>
+            <p>Bienvenido al sistema de Ecommerce restaurante <b>BUEN GUSTO</b></p>
+            <p>Ingresa tus credenciales para automatizar y publicar los menus y los platillos disponibles</p><br>
+            {% if messages %}
+              {% for msg in messages %}
+              <b>{{msg}}</b>
+              {% endfor %}
+            {% endif %}
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" name="user" placeholder="Usuario" required/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" name="pass" placeholder="Contraseña" required/>
+            </div>
+            <input type="submit" value="Iniciar sesión" class="btn solid" />
+          </form>
+
+          <form method="post" id="signup" class="sign-up-form">
+            {% csrf_token %}
+            <h2 class="title">Regístrate</h2>
+            <p>Ingresa los datos solicitados y realiza tus pagos de forma rápida</p><br>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" name="name" placeholder="Nombre completo" required/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="text" name="username" placeholder="Nombre de usuario" required/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="text" name="password" placeholder="Contraseña" required/>
+            </div>
+            <input type="submit" class="btn" value="Registrarse" />
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Eres un nuevo administrador?</h3>
+            <p>
+              Solicita tu cuenta directamente con el administrador encargado.
+            </p>
+            <a class="btn transparent" id="sign-up-btn" href="{% url 'Home' %}">
+              Regresar
+            </a>
+          </div>
+          <img src="{% static 'Pagina/img/log.svg' %}" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Ya tienes una cuenta?</h3>
+            <p>
+              Inicia sesión y realiza tus registros.
+            </p>
+            <a class="btn transparent" href="{% url 'Home' %}" id="sign-in-btn" >
+              Iniciar sesión
+            </a>
+          </div>
+          <img src="{% static 'Pagina/img/register.svg' %}" class="image" alt="" />
+        </div>
+      </div>
+    </section>
+    </div>
+
+  </body>
+</html>
